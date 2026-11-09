@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKY CLASS PICKER</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🎯 LUCKY CLASS PICKER</h1>
+        <p>Spin the wheel and let luck choose the winner!</p>
+    </header>
+
+    <main class="layout">
+
+        <!-- Lucky Wheel -->
+        <section class="panel">
+
+            <h2> The Lucky Wheel </h2>
+
+            <div class="wheel-area">
+
+                <div class="wheel-wrap">
+                    <canvas id="wheel"
+                        width="700"
+                        height="700">
+                    </canvas>
+
+                    <div class="pointer"></div>
+                </div>
+
+                <button class="spin" id="spinBtn">
+                    ▶ SPIN THE WHEEL!
+                </button>
+
+            </div>
+
+            <!-- Winner Display -->
+            <div class="winner">
+                <div class="label">🏆 WINNER! 🏆</div>
+
+                <div class="winner-name" id="winnerName">
+                    Ready to play?
+                </div>
+
+                <small id="winnerMessage">
+                    Add names, then spin the wheel.
+                </small>
+            </div>
+
+        </section>
+
+        <!-- Name Management -->
+        <aside class="panel">
+
+            <h2>➕ Add Names</h2>
+
+            <div class="add-row">
+                <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="Enter a name">
+
+                <button class="add-btn" id="addBtn">
+                    +
+                </button>
+            </div>
+
+            <p class="hint">
+                Add one name at a time, or paste a list below.
+            </p>
+
+            <label for="bulkInput">
+                <strong>Bulk Import</strong>
+            </label>
+
+            <textarea
+                id="bulkInput"
+                placeholder="Enter names here">
+            </textarea>
+
+            <div class="actions">
+                <button class="secondary" id="importBtn">
+                    Import Names
+                </button>
+
+                <button class="danger" id="clearBtn">
+                    Clear All
+                </button>
+            </div>
+
+            <div class="list-head">
+                <h2>💜 Names</h2>
+                <span class="count" id="count">
+                    0 active
+                </span>
+            </div>
+
+            <ul class="names" id="nameList"></ul>
+
+        </aside>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>  
