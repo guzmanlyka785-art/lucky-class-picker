@@ -80,7 +80,9 @@ canvas {
 
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
-    border-left: 30px solid #e33e58;
+    border-right: 30px solid #e33e58;
+
+    z-index: 10;
 }
 
 button {
